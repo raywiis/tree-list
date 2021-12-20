@@ -1,0 +1,13 @@
+body {
+	font-family: sans-serif;
+}
+
+.item-row {
+	width: 70%;
+	display: flex;
+	box-sizing: border-box;
+}
+
+.item-row-name {
+	flex: 1;
+}
