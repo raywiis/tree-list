@@ -13,10 +13,8 @@ export const Recursive = ({
 }) => {
 	const node = nodes.get(rootId);
 	return (
-		<div className="item-row">
-			<div className="item-row-name">
-				{node.name}
-			</div>
+		<div>
+			{node.name}
 			<button onClick={() => addRandom(rootId)}>Add random</button>
 			<button onClick={() => addNamedItem(rootId)}>Add named</button>
 			<ul>

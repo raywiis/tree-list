@@ -1,21 +1,19 @@
 {
-  "devDependencies": {
-    "parcel": "^2.0.1"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
-    "@mui/material": "^5.2.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "scripts": {
-    "start": "parcel src/index.html"
-  },
-  "name": "tree-list",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC",
-  "description": ""
+	"devDependencies": {
+		"parcel": "^2.0.1"
+	},
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"scripts": {
+		"start": "parcel src/index.html",
+		"format": "prettier --write ."
+	},
+	"name": "tree-list",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "",
+	"license": "ISC",
+	"description": ""
 }

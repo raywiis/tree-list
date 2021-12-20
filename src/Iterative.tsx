@@ -21,15 +21,12 @@ const flattenTree = (nodes: Tree, rootId: TreeNodeId): [TreeNode, number][] => {
 
 const IterativeItem = ({ node, addRandom, addNamedItem, indentation }) => (
 	<div
-		className="item-row"
 		key={node.id}
 		style={{
 			paddingLeft: 16 * indentation,
 		}}
 	>
-		<div className="item-row-name">
-			{node.name}
-		</div>
+		{node.name}
 		<button onClick={() => addRandom(node.id)}>Add random</button>
 		<button onClick={() => addNamedItem(node.id)}>Add named</button>
 	</div>

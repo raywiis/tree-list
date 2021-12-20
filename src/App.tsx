@@ -3,7 +3,6 @@ import { Iterative } from "./Iterative";
 import { Recursive } from "./Recursive";
 import { useTree } from "./useTree";
 import { TreeNodeId } from "./types";
-import "./style.css";
 
 export default function App() {
 	const [recursive, setRecursive] = useState(false);

@@ -6,4 +6,4 @@ export type TreeNode = {
 	children: TreeNodeId[];
 };
 
-export type Tree = Map<TreeNodeId, TreeNode>
+export type Tree = Map<TreeNodeId, TreeNode>;
