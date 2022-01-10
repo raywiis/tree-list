@@ -6,7 +6,7 @@ import { TreeNodeId } from "./types";
 
 export default function App() {
 	const [recursive, setRecursive] = useState(false);
-	const { nodes, addNode } = useTree();
+	const { nodes, addNode, removeNode } = useTree();
 
 	const addRandom = (rootId: TreeNodeId) => {
 		addNode(rootId, Math.random().toFixed(20));
@@ -14,7 +14,9 @@ export default function App() {
 
 	const addNamedItem = (rootId: TreeNodeId) => {
 		const itemName = prompt("What to name the new item?");
-		addNode(rootId, itemName);
+		if (itemName) {
+			addNode(rootId, itemName);
+		}
 	};
 
 	return (
@@ -38,8 +40,10 @@ export default function App() {
 					nodes={nodes}
 					addRandom={addRandom}
 					addNamedItem={addNamedItem}
+					removeItem={removeNode}
 				/>
 			)}
+			{JSON.stringify(Array.from(nodes.entries()), null, 4)}
 		</div>
 	);
 }

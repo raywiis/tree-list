@@ -12,6 +12,10 @@ export const Recursive = ({
 	addNamedItem: (id: TreeNodeId) => void;
 }) => {
 	const node = nodes.get(rootId);
+	if (!node) {
+		console.error("No node in tree");
+		return null;
+	}
 	return (
 		<div>
 			{node.name}

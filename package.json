@@ -1,5 +1,6 @@
 {
 	"devDependencies": {
+		"@types/react": "^17.0.38",
 		"parcel": "^2.0.1"
 	},
 	"dependencies": {
